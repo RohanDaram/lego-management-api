@@ -1,0 +1,228 @@
+[
+  {
+    "name": "LEGO Millennium Falcon",
+    "setNumber": 75192,
+    "pieceCount": 7541,
+    "releaseDate": "2017-09-01",
+    "retirementDate": "2022-12-31",
+    "targetAge": 16,
+    "theme": "Star Wars",
+    "price": 799.99,
+    "setClassification": "DISPLAY_SET",
+    "numMinifigures": 7,
+    "licensed": true,
+    "dimensions": {
+      "length": 33.0,
+      "width": 22.0,
+      "weight": 1.5,
+      "dimensionUnits": "INCHES",
+      "weightUnits": "KILOGRAMS"
+    },
+    "instructions": {
+      "numPages": 500,
+      "numInstructions": 250,
+      "digital": true
+    },
+    "buildDetails": {
+      "complexityLevel": "HARD",
+      "averageBuildTimeInHours": 10.5
+    },
+    "minifigures": [
+      {
+        "name": "Han Solo",
+        "exclusive": true,
+        "prints": true
+      },
+      {
+        "name": "Chewbacca",
+        "exclusive": false,
+        "prints": true
+      },
+      {
+        "name": "Princess Leia",
+        "exclusive": false,
+        "prints": true
+      },
+      {
+        "name": "Luke Skywalker",
+        "exclusive": false,
+        "prints": false
+      },
+      {
+        "name": "R2-D2",
+        "exclusive": false,
+        "prints": false
+      },
+      {
+        "name": "C-3PO",
+        "exclusive": false,
+        "prints": false
+      },
+      {
+        "name": "TIE Fighter Pilot",
+        "exclusive": false,
+        "prints": true
+      }
+    ]
+  },
+  {
+    "name": "LEGO Hogwarts Castle",
+    "setNumber": 71043,
+    "pieceCount": 6020,
+    "releaseDate": "2018-09-01",
+    "retirementDate": "2023-12-31",
+    "targetAge": 16,
+    "theme": "Harry Potter",
+    "price": 469.99,
+    "setClassification": "DISPLAY_SET",
+    "numMinifigures": 4,
+    "licensed": true,
+    "dimensions": {
+      "length": 22.0,
+      "width": 15.0,
+      "weight": 0.8,
+      "dimensionUnits": "INCHES",
+      "weightUnits": "KILOGRAMS"
+    },
+    "instructions": {
+      "numPages": 350,
+      "numInstructions": 180,
+      "digital": true
+    },
+    "buildDetails": {
+      "complexityLevel": "HARD",
+      "averageBuildTimeInHours": 9.0
+    },
+    "minifigures": [
+      {
+        "name": "Godric Gryffindor",
+        "exclusive": true,
+        "prints": true
+      },
+      {
+        "name": "Helga Hufflepuff",
+        "exclusive": true,
+        "prints": true
+      },
+      {
+        "name": "Salazar Slytherin",
+        "exclusive": true,
+        "prints": true
+      },
+      {
+        "name": "Rowena Ravenclaw",
+        "exclusive": true,
+        "prints": true
+      }
+    ]
+  },
+  {
+    "name": "LEGO Technic Bugatti Chiron",
+    "setNumber": 42083,
+    "pieceCount": 3599,
+    "releaseDate": "2018-06-01",
+    "retirementDate": "2022-12-31",
+    "targetAge": 16,
+    "theme": "Technic",
+    "price": 349.99,
+    "setClassification": "DISPLAY_SET",
+    "numMinifigures": 0,
+    "licensed": true,
+    "dimensions": {
+      "length": 22.0,
+      "width": 10.0,
+      "weight": 1.2,
+      "dimensionUnits": "INCHES",
+      "weightUnits": "KILOGRAMS"
+    },
+    "instructions": {
+      "numPages": 200,
+      "numInstructions": 120,
+      "digital": true
+    },
+    "buildDetails": {
+      "complexityLevel": "HARD",
+      "averageBuildTimeInHours": 15.0
+    }
+  },
+  {
+    "name": "LEGO Tree House",
+    "setNumber": 21318,
+    "pieceCount": 3036,
+    "releaseDate": "2019-08-01",
+    "retirementDate": "2023-07-31",
+    "targetAge": 12,
+    "theme": "Ideas",
+    "price": 199.99,
+    "setClassification": "DISPLAY_SET",
+    "numMinifigures": 4,
+    "licensed": false,
+    "dimensions": {
+      "length": 18.0,
+      "width": 12.0,
+      "weight": 0.9,
+      "dimensionUnits": "INCHES",
+      "weightUnits": "KILOGRAMS"
+    },
+    "instructions": {
+      "numPages": 250,
+      "numInstructions": 150,
+      "digital": true
+    },
+    "buildDetails": {
+      "complexityLevel": "MEDIUM",
+      "averageBuildTimeInHours": 8.0
+    },
+    "minifigures": [
+      {
+        "name": "Mom",
+        "exclusive": false,
+        "prints": true
+      },
+      {
+        "name": "Dad",
+        "exclusive": false,
+        "prints": true
+      },
+      {
+        "name": "Son",
+        "exclusive": false,
+        "prints": true
+      },
+      {
+        "name": "Daughter",
+        "exclusive": false,
+        "prints": true
+      }
+    ]
+  },
+  {
+    "name": "LEGO NASA Apollo Saturn V",
+    "setNumber": 21309,
+    "pieceCount": 1969,
+    "releaseDate": "2017-06-01",
+    "retirementDate": "2020-12-31",
+    "targetAge": 14,
+    "theme": "Ideas",
+    "price": 119.99,
+    "setClassification": "DISPLAY_SET",
+    "numMinifigures": 0,
+    "licensed": true,
+    "dimensions": {
+      "length": 39.0,
+      "width": 6.0,
+      "weight": 0.6,
+      "dimensionUnits": "INCHES",
+      "weightUnits": "KILOGRAMS"
+    },
+    "instructions": {
+      "numPages": 180,
+      "numInstructions": 90,
+      "digital": true
+    },
+    "buildDetails": {
+      "complexityLevel": "MEDIUM",
+      "averageBuildTimeInHours": 6.0
+    }
+  }
+]

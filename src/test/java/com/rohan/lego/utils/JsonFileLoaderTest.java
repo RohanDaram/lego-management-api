@@ -14,16 +14,6 @@ public class JsonFileLoaderTest {
 	private JsonFileLoader jsonFileLoader;
 
 	@Test
-	public void loadJsonDataFromFileUsingCustomMapperTest() throws IOException {
-
-		assert (jsonFileLoader.loadJsonDataFromFileUsingCustomMapper() != null);
-
-		List<LegoSet> legoSets = jsonFileLoader.loadJsonDataFromFileUsingCustomMapper();
-
-		legoSets.stream().forEach(System.out::println);
-	}
-
-	@Test
 	public void loadJsonDataFromFileUsingAutoConfiguredMapperTest() throws IOException {
 
 		assert (jsonFileLoader.loadJsonDataFromFileUsingAutoConfiguredMapper() != null);

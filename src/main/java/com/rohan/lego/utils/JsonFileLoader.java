@@ -19,23 +19,6 @@ public class JsonFileLoader {
 	@Autowired
 	private ObjectMapper objectMapper;
 
-	public List<LegoSet> loadJsonDataFromFileUsingCustomMapper() throws IOException {
-
-		InputStream inputStream = JsonFileLoader.class.getClassLoader().getResourceAsStream("legosetdata.json");
-
-		if (inputStream == null) {
-			throw new IOException("Resource not found: " + "legosetdata.json");
-		}
-
-		ObjectMapper customObjectMapper = new ObjectMapper();
-		// Register the JavaTimeModule for LocalDate
-		customObjectMapper.registerModule(new JavaTimeModule());
-		customObjectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-
-		return customObjectMapper.readValue(inputStream, new TypeReference<List<LegoSet>>() {
-		});
-	}
-
 	public List<LegoSet> loadJsonDataFromFileUsingAutoConfiguredMapper() throws IOException {
 
 		InputStream inputStream = JsonFileLoader.class.getClassLoader().getResourceAsStream("legosetdata.json");

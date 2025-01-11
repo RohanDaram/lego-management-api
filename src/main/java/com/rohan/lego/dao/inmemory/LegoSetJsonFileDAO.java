@@ -52,18 +52,7 @@ public class LegoSetJsonFileDAO implements LegoSetOperations {
 		legoSetCache.setLegoSetData(new ArrayList<LegoSet>());
 		return true;
 	}
-
-	public boolean updateLegoSetData1(UpdateRequest request) throws DataAccessException {
-
-		List<LegoSet> setsToUpdate = legoSetCache.getLegoSetData().stream()
-				.filter(legoSet -> legoSet.getSetNumber() == request.getSetNumber()).collect(Collectors.toList());
-
-		setsToUpdate.get(0).setPrice(request.getPrice());
-		setsToUpdate.get(0).setRetirementDate(request.getRetirementDate());
-
-		return true;
-	}
-
+	
 	public boolean updateLegoSetData(UpdateRequest request) throws DataAccessException {
 
 		legoSetCache.getLegoSetData().stream().filter(legoSet -> legoSet.getSetNumber() == request.getSetNumber())

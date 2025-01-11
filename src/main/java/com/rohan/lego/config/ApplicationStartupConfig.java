@@ -13,7 +13,7 @@ import com.rohan.lego.model.LegoSet;
 import com.rohan.lego.model.LegoSetCache;
 import com.rohan.lego.utils.JsonFileLoader;
 
-//@Configuration
+@Configuration
 public class ApplicationStartupConfig {
 	
 	@Autowired

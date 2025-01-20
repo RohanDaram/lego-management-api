@@ -34,7 +34,7 @@ public class LegoSetController {
 	@GetMapping("/legosets")
 	public List<LegoSet> getLegoSets() {
 
-		return legoSetService.getLegoSets();
+		return legoSetService.getLegoSetsFromH2Database();
 	}
 
 	@GetMapping("/legosets/{lego-theme}")

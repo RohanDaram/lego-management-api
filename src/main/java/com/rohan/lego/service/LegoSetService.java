@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.rohan.lego.dao.LegoSetOperations;
+import com.rohan.lego.dao.h2.LegoSetH2DatabaseDAO;
 import com.rohan.lego.exception.DataAccessException;
 import com.rohan.lego.model.DeleteRequest;
 import com.rohan.lego.model.LegoSet;
@@ -23,8 +24,11 @@ public class LegoSetService {
 
 	@Autowired
 	LegoSetCache legoSetCache;
+	
+	@Autowired
+	LegoSetH2DatabaseDAO legoSetH2DatabaseDAO; 
 
-	public List<LegoSet> getLegoSets() {
+	public List<LegoSet> getLegoSetsFromJsonFile() {
 
 		List<LegoSet> legoSets = new ArrayList<>();
 
@@ -42,9 +46,27 @@ public class LegoSetService {
 		return legoSets;
 	}
 
+	public List<LegoSet> getLegoSetsFromH2Database() {
+
+		List<LegoSet> legoSets = new ArrayList<>();
+
+		try {
+			legoSets = legoSetH2DatabaseDAO.getLegoSets();
+		} catch (DataAccessException daex) {
+			daex.printStackTrace();
+			System.out.println("Exception from the DAO Layer :" + daex.getMessage());
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			System.out.println("Unknown Exception in the DAO Layer :" + ex.getMessage());
+
+		}
+		return legoSets;
+	}
+
 	public List<LegoSet> getLegoSetsByTheme(String legoTheme) {
 
-		return getLegoSets().stream().filter(legoSet -> legoSet.getTheme().trim().equalsIgnoreCase(legoTheme))
+		return getLegoSetsFromJsonFile().stream().filter(legoSet -> legoSet.getTheme().trim().equalsIgnoreCase(legoTheme))
 				.collect(Collectors.toList());
 	}
 
